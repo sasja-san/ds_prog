@@ -1,5 +1,5 @@
-FASMARM=fasmarm
-NDSTOOL=ndstool
+FASMARM=./resource/fasmarm
+NDSTOOL=./resource/ndstool
 
 ICON_FILE = img/icon.bmp
 ROM_TITLE = "DS Prog"

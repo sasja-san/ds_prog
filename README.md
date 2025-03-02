@@ -14,8 +14,10 @@ Here, instead, are instructions on how to set it up in Arch Linux.
 Here the binaries (`fasmarm` and `ndstool`) needed to make the rom are
 included.
 Everything *should* just work by running `make rom`.
-The remainder of this contains instructions for setting up the needed tools 
-on an Arch system^[Only tested on Manjaro. It's close enough.].
+The remainder of this document contains instructions for setting up the tools 
+needed, on an Arch system[^manjaro].
+
+[^manjaro]: Only tested on Manjaro. It's close enough.
 
 
 
@@ -33,8 +35,8 @@ wget -qO- https://arm.flatassembler.net/FASMARM_full.ZIP | bsdtar - -x fasmarm &
 
 # NdsTool (DevkitPro)
 
-Some of these instructions are for the `fish` shell. Adjust if needed.
-This is more or less ripped directly from 
+Some of these instructions are for the `fish` shell (specifically the 
+`set` commands). Adjust if needed. This is more or less ripped directly from 
 <https://devkitpro.org/wiki/devkitPro_pacman>.
 
 Environment vars:
@@ -61,7 +63,7 @@ sudo pacman -U https://pkg.devkitpro.org/devkitpro-keyring.pkg.tar.zst
 sudo pacman-key --populate devkitpro
 ```
 
-Edit /etc/pacman.conf, add these lines
+Edit /etc/pacman.conf to add these lines:
 
 ```
 [dkp-libs]
